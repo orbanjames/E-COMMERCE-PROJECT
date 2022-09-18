@@ -1,7 +1,7 @@
 const people = [
   {
     id: 1,
-    name: 'Brown bed and side chairs',
+    name: 'Brown bed with side tables',
     image: './images/item-1.jpg',
   },
   {
@@ -21,7 +21,7 @@ const people = [
   },
   {
     id: 5,
-    name: 'black chair',
+    name: 'black chairs',
     image: './images/item-4.jpg',
   },
   {

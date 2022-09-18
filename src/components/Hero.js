@@ -10,7 +10,7 @@ import { FaQuoteRight } from 'react-icons/fa'
 const Hero = () => {
   const [people, setPeople] = useState(data)
   const [index, setIndex] = useState(0)
-  //setting exact positions for slides positive nd negative
+  //setting exact positions for slides positive and negative
   useEffect(() => {
     const lastIndex = people.length - 1
     if (index < 0) {
@@ -149,13 +149,13 @@ const Wrapper = styled.section`
       margin: 0 auto;
       margin-top: 1rem;
       width: 150vw;
-      /* has to have a height */
+     // has to have a height 
       height: 680px;
       max-width: 1200px;
       text-align: center;
       position: relative;
       display: flex;
-      /* overflow: hidden; */
+       overflow: hidden; 
     }
 
     .person-img {
