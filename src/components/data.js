@@ -1,31 +1,39 @@
 const people = [
   {
     id: 1,
-    image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
-    name: 'maria ferguson',
-    title: 'office manager',
+    name: 'Brown bed and side chairs',
+    image: './images/item-1.jpg',
   },
   {
     id: 2,
-    image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
-    name: 'john doe',
-    title: 'regular guy',
+    name: 'sofa',
+    image: './images/item-5.jpg',
   },
   {
     id: 3,
-    image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959121/person-1_aufeoq.jpg',
-    name: 'peter smith',
-    title: 'product designer'
+    name: 'white couch',
+    image: './images/item-6.jpg',
   },
   {
     id: 4,
-    image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
-    name: 'susan andersen',
-    title: 'the boss',
+    name: 'dinning Table',
+    image: './images/item-3.jpg',
+  },
+  {
+    id: 5,
+    name: 'black chair',
+    image: './images/item-4.jpg',
+  },
+  {
+    id: 6,
+    name: 'white wooden cabinate',
+    image: './images/item-7.jpg',
+  },
+  {
+    id: 7,
+    name: 'White Bed spread',
+    price: 18.99,
+    image: './images/item-2.jpg',
   },
 ]
 

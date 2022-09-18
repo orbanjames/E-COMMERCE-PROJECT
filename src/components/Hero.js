@@ -126,7 +126,6 @@ const Wrapper = styled.section`
       border-radius: var(--radius);
     }
 
-
     .title {
       text-align: center;
       margin-bottom: 2rem;
@@ -148,11 +147,11 @@ const Wrapper = styled.section`
 
     .section-center {
       margin: 0 auto;
-      margin-top: 1rem;
+      margin-top: 4rem;
       width: 150vw;
       /* has to have a height */
-      height: 800px;
-      max-width: 1100px;
+      height: 700px;
+      max-width: 1200px;
       text-align: center;
       position: relative;
       display: flex;
@@ -163,7 +162,7 @@ const Wrapper = styled.section`
       border-radius: 0%;
       margin-bottom: 1rem;
       width: 1000px;
-      height: 300px;
+      height: 400px;
       object-fit: cover;
       border: 4px solid var(--clr-grey-8);
       box-shadow: var(--dark-shadow);
@@ -179,12 +178,13 @@ const Wrapper = styled.section`
       text-transform: capitalize;
       margin-bottom: 0.75rem;
       color: var(--clr-grey-3);
+      text-align: center;
     }
 
     .text {
-      max-width: 35em;
+      max-width: 50em;
       margin: 0 auto;
-      margin-top: 2rem;
+      margin-top: 4rem;
       line-height: 2;
       color: var(--clr-grey-5);
     }
