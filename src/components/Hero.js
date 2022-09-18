@@ -147,7 +147,7 @@ const Wrapper = styled.section`
 
     .section-center {
       margin: 0 auto;
-      margin-top: 4rem;
+      margin-top: 1rem;
       width: 150vw;
       /* has to have a height */
       height: 700px;
