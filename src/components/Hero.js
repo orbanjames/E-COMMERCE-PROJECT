@@ -162,7 +162,7 @@ const Wrapper = styled.section`
       border-radius: 0%;
       margin-bottom: 1rem;
       width: 1000px;
-      height: 380px;
+      height: 350px;
       object-fit: cover;
       border: 4px solid var(--clr-grey-8);
       box-shadow: var(--dark-shadow);
