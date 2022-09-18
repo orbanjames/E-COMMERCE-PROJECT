@@ -32,7 +32,7 @@ const Hero = () => {
         
         <div className='section-center'>
           {people.map((person, personIndex) => {
-            const { id, image, name, title, quote } = person
+            const { id, image, name, title } = person
 
             //seting slides
             let position = 'nextSlide'
@@ -50,7 +50,6 @@ const Hero = () => {
                 <img src={image} alt={name} className='person-img' />
                 <h4>{name}</h4>
                 <p className='title'>{title}</p>
-                <p className='text'>{quote}</p>
                 <Link to='/products' className='btn hero-btn'>
                   shop now
                 </Link>
@@ -143,16 +142,16 @@ const Wrapper = styled.section`
     .title span {
       font-size: 0.85em;
       color: var(--clr-primary-5);
-      margin-right: 1rem;
+      margin-right: 0rem;
       font-weight: 700;
     }
 
     .section-center {
       margin: 0 auto;
-      margin-top: 0rem;
+      margin-top: 1rem;
       width: 150vw;
       /* has to have a height */
-      height: 700px;
+      height: 800px;
       max-width: 1100px;
       text-align: center;
       position: relative;
