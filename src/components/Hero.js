@@ -150,7 +150,7 @@ const Wrapper = styled.section`
       margin-top: 1rem;
       width: 150vw;
       /* has to have a height */
-      height: 700px;
+      height: 680px;
       max-width: 1200px;
       text-align: center;
       position: relative;
