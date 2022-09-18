@@ -153,7 +153,7 @@ const Wrapper = styled.section`
       width: 150vw;
       /* has to have a height */
       height: 700px;
-      max-width: 1500px;
+      max-width: 1100px;
       text-align: center;
       position: relative;
       display: flex;
@@ -163,8 +163,8 @@ const Wrapper = styled.section`
     .person-img {
       border-radius: 0%;
       margin-bottom: 1rem;
-      width: 1400px;
-      height: 450px;
+      width: 1000px;
+      height: 300px;
       object-fit: cover;
       border: 4px solid var(--clr-grey-8);
       box-shadow: var(--dark-shadow);
