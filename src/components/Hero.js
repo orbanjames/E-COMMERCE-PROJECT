@@ -28,41 +28,40 @@ const Hero = () => {
   }, [index])
 
   return (
-    <Wrapper className='section-center'> 
-        
-        <div className='section-center'>
-          {people.map((person, personIndex) => {
-            const { id, image, name, title } = person
+    <Wrapper className='section-center'>
+      <div className='section-center'>
+        {people.map((person, personIndex) => {
+          const { id, image, name, title } = person
 
-            //seting slides
-            let position = 'nextSlide'
-            if (personIndex === index) {
-              position = 'activeSlide'
-            }
-            if (
-              personIndex === index - 1 ||
-              (index === 0 && personIndex === people.length - 1)
-            ) {
-              position = 'lastSlide'
-            }
-            return (
-              <article className={position} key={id}>
-                <img src={image} alt={name} className='person-img' />
-                <h4>{name}</h4>
-                <p className='title'>{title}</p>
-                <Link to='/products' className='btn hero-btn'>
-                  shop now
-                </Link>
-              </article>
-            )
-          })}
-          <button className='prev' onClick={() => setIndex(index - 1)}>
-            <FiChevronLeft />
-          </button>
-          <button className='next' onClick={() => setIndex(index + 1)}>
-            <FiChevronRight />
-          </button>
-        </div>
+          //seting slides
+          let position = 'nextSlide'
+          if (personIndex === index) {
+            position = 'activeSlide'
+          }
+          if (
+            personIndex === index - 1 ||
+            (index === 0 && personIndex === people.length - 1)
+          ) {
+            position = 'lastSlide'
+          }
+          return (
+            <article className={position} key={id}>
+              <img src={image} alt={name} className='person-img' />
+              <h4>{name}</h4>
+              <p className='title'>{title}</p>
+              <Link to='/products' className='btn hero-btn'>
+                shop now
+              </Link>
+            </article>
+          )
+        })}
+        <button className='prev' onClick={() => setIndex(index - 1)}>
+          <FiChevronLeft />
+        </button>
+        <button className='next' onClick={() => setIndex(index + 1)}>
+          <FiChevronRight />
+        </button>
+      </div>
     </Wrapper>
   )
 }
@@ -99,7 +98,7 @@ const Wrapper = styled.section`
       display: block;
       position: relative;
     }
-    .main-img {
+    .person-img.main-img {
       width: 100%;
       height: 550px;
       position: relative;
@@ -149,13 +148,13 @@ const Wrapper = styled.section`
       margin: 0 auto;
       margin-top: 1rem;
       width: 150vw;
-     // has to have a height 
+      // has to have a height
       height: 680px;
       max-width: 1200px;
       text-align: center;
       position: relative;
       display: flex;
-       overflow: hidden; 
+      overflow: hidden;
     }
 
     .person-img {
@@ -230,14 +229,36 @@ const Wrapper = styled.section`
       .text {
         max-width: 45em;
       }
-
-      .prev,
+      .person-img .prev,
       .next {
         width: 2rem;
         height: 2rem;
         font-size: 1.5rem;
       }
     }
+    @media only screen and (max-width: 400px) {
+      .text {
+        max-width: 45em;
+      }
+      .person-img .prev,
+      .next {
+        width: 200px;
+        height: 150;
+        font-size: 1.5rem;
+      }
+    }
+    @media only screen and (max-width: 250px) {
+      .text {
+        max-width: 45em;
+      }
+      .person-img .prev,
+      .next {
+        width: 200px;
+        height: 150px;
+        font-size: 1.5rem;
+      }
+    }
+    
 
     /* to set slider*/
     article {
